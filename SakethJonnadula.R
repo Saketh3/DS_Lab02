@@ -14,8 +14,7 @@ types <- reorder(types, choco$Rating, FUN=mean, na.rm=TRUE)
 str(types)
 str(choco$Rating)
 str(choco$Rating ~ types)
-# Can't hist a formula but can boxplot a formula
-# By company
+
 #A bargraph wasnt also working so I used a boxplot
 boxplot(choco$Rating ~ types)
 table(types)
